@@ -4,8 +4,9 @@ resource "null_resource" "test" {
 
 variable "inputs" {
   default = {
+    z = 300
     x = 100
     y = 200
-    z = 300
+
   }
 }
