@@ -11,6 +11,3 @@ variable "inputs" {
   }
 }
 
-output "inputs" {
-  value = var.inputs[x]
-}
