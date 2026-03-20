@@ -11,7 +11,7 @@ resource "aws_instance" "test" {
       password = "DevOps321"
     }
     inline = [
-      "sudo echo Hello >/root/some"
+      "echo Hello >/tmp/some"
     ]
   }
 }
