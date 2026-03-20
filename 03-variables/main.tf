@@ -30,3 +30,12 @@ output "x1" {
   value = "x is ${var.x}"
 }
 
+output "example1" {
+  value = var.example1[2]
+}
+
+output "example2" {
+  value = var.example2["a"]
+}
+
+
