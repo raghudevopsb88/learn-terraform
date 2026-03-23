@@ -9,7 +9,20 @@ data "aws_ami" "ami" {
 
 }
 
+data "aws_security_group" "selected" {
+
+  filter {
+    name   = "name"
+    values = ["allow-all"]
+  }
+
+}
+
+
 output "ami" {
   value = data.aws_ami.ami
 }
 
+output "security_group" {
+  value = data.aws_security_group.selected
+}
