@@ -6,7 +6,11 @@ variable "input" {
   }
 }
 
+locals {
+  input_list = [for i,j in var.input: j]
+}
+
 output "out" {
-  value = [for i,j in var.input: j]
+  value = local.input_list
 }
 
