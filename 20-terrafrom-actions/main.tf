@@ -12,8 +12,8 @@ resource "aws_instance" "main" {
     # The action_trigger block links the action to lifecycle events
     action_trigger {
       events = [
-        "after_create",
-        "after_update"
+        after_create,
+        after_update
       ]
       actions = [
         action.aws_ec2_stop_instance.example # Reference the action by its address
