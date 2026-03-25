@@ -1,6 +1,6 @@
 resource "aws_instance" "main" {
   ami           = var.ami
-  instance_type = "t3.small"
+  instance_type = "t3.large"
 }
 
 variable "ami" {
