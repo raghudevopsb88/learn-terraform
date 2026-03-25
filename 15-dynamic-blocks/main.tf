@@ -34,9 +34,6 @@ resource "aws_security_group" "main" {
       protocol         = "TCP"
       cidr_blocks      = ["0.0.0.0/0"]
       description      = ingress.key
-      tags             = {
-        Name = ingress.key
-      }
     }
   }
 
